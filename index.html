@@ -1,43 +1,297 @@
 <!doctype html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="copyright" content="This page was made by adwokatpuck.pl">
     <meta content="Kancelaria BDF" name="author">
     <meta name="description"
-          content="Obsługa prawna klientów indywidualnych, podmiotów gospodarczych oraz instytucji. Porady prawne, pisma procesowe, bieżąca obsługa prawna, sprawy sądowe. Kancelaria BDF.">
-    <meta name="keywords"
-          content="">
+        content="Obsługa prawna klientów indywidualnych, podmiotów gospodarczych oraz instytucji. Porady prawne, pisma procesowe, bieżąca obsługa prawna, sprawy sądowe. Kancelaria BDF.">
+    <meta name="keywords" content="">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="7 days" name="revisit-after">
     <meta content="code" name="googlebot">
     <meta content="Kancelaria BDF" name="DC.title">
     <meta content="Kancelaria BDF" name="DC.creator">
-    <meta content="Kancelaria BDF"
-          name="DC.subject" lang="pl">
-    <meta content="Obsługa prawna klientów indywidualnych, podmiotów gospodarczych oraz instytucji. Porady prawne, pisma procesowe, bieżąca obsługa prawna, sprawy sądowe. Kancelaria BDF."
-          name="DC.description" lang="pl">
+    <meta content="Kancelaria BDF" name="DC.subject" lang="pl">
+    <meta
+        content="Obsługa prawna klientów indywidualnych, podmiotów gospodarczych oraz instytucji. Porady prawne, pisma procesowe, bieżąca obsługa prawna, sprawy sądowe. Kancelaria BDF."
+        name="DC.description" lang="pl">
     <meta content="Kancelaria BDF" name="DC.publisher">
     <meta content="Kancelaria BDF" property="og:title">
-    <meta content="Obsługa prawna klientów indywidualnych, podmiotów gospodarczych oraz instytucji. Porady prawne, pisma procesowe, bieżąca obsługa prawna, sprawy sądowe. Kancelaria BDF."
-          property="og:description">
+    <meta
+        content="Obsługa prawna klientów indywidualnych, podmiotów gospodarczych oraz instytucji. Porady prawne, pisma procesowe, bieżąca obsługa prawna, sprawy sądowe. Kancelaria BDF."
+        property="og:description">
     <meta content="index,follow" name="robots">
     <title>Kancelaria BDF</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="./bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./logo.png">
 </head>
-<body>
-<main>
 
-</main>
-<footer>
-    Kancelaria BDF 2021 ©
-</footer>
-<script src="./script.js"></script>
+<body>
+    <main>
+
+        <header class="main-header">
+            <input type="checkbox" class="app-nav-trigger" id="nav">
+            <label class="app-nav-trigger-label" for="nav">
+                <span class="app-nav-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </label>
+
+            <nav class="app-nav d-flex flex-column justify-content-center align-items-center">
+                <div class="d-flex justify-content-center align-items-center mb-5">
+                    <img src="./logo.png" class="img-fluid w-50" />
+                </div>
+                <div class="app-nav-menu-content d-flex flex-column">
+                    <a href="#about">STRONA GŁÓWNA</a>
+                    <a href="#specializations">SPECJALIZACJE</a>
+                    <a href="#crew">ZESPÓŁ</a>
+                    <a href="#contact">KONTAKT</a>
+                </div>
+            </nav>
+
+            <div class="container-fluid p-0">
+                <div class="row no-gutters">
+                    <div class="col hero-image">
+                        <div class="white-background">
+                            <div class="title">BDF</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section id="about" class="about p-5 d-flex flex-column align-items-center">
+            <h2 class="text-center my-5">O kancelarii</h2>
+            <p class="w-75">Kancelaria adwokacka prowadzona przez Adwokatów
+                Katarzynę
+                Białopiotrowicz, Kingę Drążek
+                oraz Mariannę Frankiewicz oferuje obsługę prawną firm oraz osób fizycznych.
+                Obszar świadczonych usług obejmuje teren całej Polski.
+                Zapewniamy naszym klientom kompleksową obsługę oraz reprezentację na wszystkich etapach postępowania,
+                przed policją, prokuraturą, urzędami skarbowymi, oraz innymi organami administracji publicznej,
+                jak również sądami wszystkich instancji oraz w postępowaniu wykonawczym i egzekucyjnym.
+                <i>Zespół zbudowany z fachowców legitymujących się bogatym doświadczeniem w prowadzeniu
+                    spraw różnych dziedzin prawa gwarantuje Państwo kompleksową obsługę oraz rozwiązanie
+                    każdego problemu prawnego.</i>
+            </p>
+        </section>
+
+        <section id="specializations" class="specializations p-5">
+            <h2 class="text-center my-5">Specjalizacje</h2>
+            <div class="row no-gutters">
+                <div class="col-sm-4 p-1 d-flex flex-column align-items-center">
+                    <div class="img-container">
+                        <img src="./assets/icons/karne.svg" class="img-fluid" alt="prawo karne">
+                    </div>
+                    <div>
+                        <h5 class="mt-3">Prawo karne</h5>
+                    </div>
+                </div>
+                <div class="col-sm-4 p-1 d-flex flex-column align-items-center">
+                    <div class="img-container">
+                        <img src=" ./assets/icons/cywil.svg" class="img-fluid" alt="prawo cywilne">
+                    </div>
+                    <div>
+                        <h5 class="mt-3">Prawo cywilne</h5>
+                    </div>
+                </div>
+                <div class="col-sm-4 p-1 d-flex flex-column align-items-center">
+                    <div class="img-container">
+                        <img src=" ./assets/icons/rozwod.svg" class="img-fluid" alt="prawo spadkowe">
+                    </div>
+                    <div>
+                        <h5 class="mt-3">Prawo spadkowe oraz rodzinne</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-sm-4 p-1 d-flex flex-column align-items-center">
+                    <div class="img-container">
+                        <img src="./assets/icons/upadlosc.svg" class="img-fluid" alt="sprawy frannkowe">
+                    </div>
+                    <div>
+                        <h5 class="mt-3">Sprawy frankowe</h5>
+                    </div>
+                </div>
+                <div class="col-sm-4 p-1 d-flex flex-column align-items-center">
+                    <div class="img-container">
+                        <img src=" ./assets/icons/spadek.svg" class="img-fluid" alt="prawo administracyjne">
+                    </div>
+                    <div>
+                        <h5 class="mt-3">Prawo administracyjne</h5>
+                    </div>
+                </div>
+                <div class="col-sm-4 p-1 d-flex flex-column align-items-center">
+                    <div class="img-container">
+                        <img src=" ./assets/icons/sluzebnosc.svg" class="img-fluid" alt="prawo gospodarcze">
+                    </div>
+                    <div>
+                        <h5 class="mt-3">Prawo gospodarcze</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-sm-4 p-1 d-flex flex-column align-items-center">
+                    <div class="img-container">
+                        <img src="./assets/icons/biz.svg" class="img-fluid" alt="inwestycje i nieruchomości">
+                    </div>
+                    <div>
+                        <h5 class="mt-3">Inwestycje i nieruchomości</h5>
+                    </div>
+                </div>
+                <div class="col-sm-4 p-1 d-flex flex-column align-items-center">
+                    <div class="img-container">
+                        <img src=" ./assets/icons/lek.svg" class="img-fluid" alt="odszkodowania">
+                    </div>
+                    <div>
+                        <h5 class="mt-3">Odszkodowania</h5>
+                    </div>
+                </div>
+                <div class="col-sm-4 p-1 d-flex flex-column align-items-center">
+                    <div class="img-container">
+                        <img src=" ./assets/icons/real.svg" class="img-fluid" alt="prawo budowlane">
+                    </div>
+                    <div>
+                        <h5 class="mt-3">Prawo budowlane</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col p-1 d-flex flex-column align-items-center">
+                    <div class="img-container">
+                        <img src="./assets/icons/ubez.svg" class="img-fluid" alt="ochrona własności intelektualnej">
+                    </div>
+                    <div>
+                        <h5 class="mt-3">Ochrona własności intelektualnej</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="crew" class="crew p-5">
+            <h2 class="text-center my-5">Zespół</h2>
+            <div class="row no-gutters">
+                <div class="col-lg-4 p-2">
+                    <img class="img-fluid" src="./assets/bialopiotrowicz.jpg" alt="bialopiotrowicz">
+                    <h3 class="my-3">Katarzyna Białopiotrowicz <br /> Adwokat</h3>
+                    <div class="contact mb-3">
+                        <div class="py-1">
+                            <img class="img-fluid" src="./assets/icons/phone.png" alt="telefon" /> (+48) 501-851-228
+                        </div>
+                        <div class="py-1">
+                            <img class="img-fluid" src="./assets/icons/envelope.png" alt="koperta" />
+                            bialopiotrowicz@kancelariaadwokackabdf.pl
+                        </div>
+                    </div>
+                    <p>Współzałożyciel Kancelarii z siedzibą w Gdańsku oraz filią w Pucku.
+                        Absolwent Wydziału Prawa i Administracji Uniwersytetu Warmińsko-Mazurskiego w Olsztynie,
+                        ukończyła aplikację adwokacką przy Pomorskiej Izbie Adwokackiej w Gdańsku.
+                        Posiada wieloletnie doświadczenie m.in. w sprawach karnych, co jest jej głównym przedmiotem
+                        działalności
+                        a zarazem jej największą pasją, oprócz tego w trakcie dotychczasowej kariery zdobyła szerokie
+                        doświadczenie
+                        w zakresie prawa gospodarczego, administracyjnego, w tym w szczególności prawa budowlanego.
+                        W wolnych chwilach Mecenas realizuje swoje pasje żeglarskie.
+                    </p>
+
+                </div>
+                <div class="col-lg-4 p-2">
+                    <img class="img-fluid" src="./assets/drazek.jpg" alt="drazek">
+                    <h3 class="my-3">Kinga Drążek <br /> Adwokat</h3>
+                    <div class="contact mb-3">
+                        <div class="py-1">
+                            <img class="img-fluid" src="./assets/icons/phone.png" alt="telefon" /> (+48) 508-362-715
+                        </div>
+                        <div class="py-1">
+                            <img class="img-fluid" src="./assets/icons/envelope.png" alt="koperta" />
+                            drazek@@kancelariaadwokackabdf.pl
+                        </div>
+                    </div>
+                    <p>Współzałożyciel Kancelarii z siedzibą w Gdańsku oraz filią w Pucku.
+                        Absolwent Wydziału Prawa i Administracji Uniwersytetu Gdańskiego,
+                        ukończyła aplikację adwokacką przy Pomorskiej Izbie Adwokackiej w Gdańsku.
+                        Doświadczenie zawodowe zdobywała w Trójmiejskich kancelariach adwokackich oraz
+                        podczas pracy w Spółce ubezpieczeniowej ERGO-HESTIA, dzięki czemu zdobyła szerokie doświadczenie
+                        zarówno w zakresie prowadzenia procesów sądowych oraz postępowań likwidacyjnych zarówno osób
+                        fizycznych,
+                        jak i podmiotów gospodarczych. Dzięki doświadczeniu, swoje zainteresowania zawodowe
+                        skoncentrowała wokół
+                        prawa karnego, cywilnego, rodzinnego i gospodarczego. Adwokat posiada wieloletnie doświadczenie
+                        m.in.
+                        w zakresie obsługi jednostek samorządu terytorialnego oraz podmiotów gospodarczych.
+                        Prywatnie miłośniczka Włoch, zarówno podróżniczo jak i kulinarnie.
+                    </p>
+                </div>
+                <div class="col-lg-4 p-2">
+                    <img class="img-fluid" src="./assets/frankiewicz.jpg" alt="frankiewicz">
+                    <h3 class="my-3">Marianna Frankiewicz <br /> Adwokat</h3>
+                    <div class="contact mb-3">
+                        <div class="py-1">
+                            <img class="img-fluid" src="./assets/icons/phone.png" alt="telefon" /> (+48) 518-759-791
+                        </div>
+                        <div class="py-1">
+                            <img class="img-fluid" src="./assets/icons/envelope.png" alt="koperta" />
+                            frankiewicz@kancelariaadwokackabdf.pl
+                        </div>
+                    </div>
+                    <p>Współzałożyciel Kancelarii z siedzibą w Gdańsku oraz filią w Pucku.
+                        Absolwent Wydziału Prawa i Administracji Uniwersytetu Gdańskiego,
+                        ukończyła aplikację adwokacką przy Pomorskiej Izbie Adwokackiej w Gdańsku.
+                        Swoje doświadczenie zawodowe zdobywała od początku studiów w wiodących Trójmiejskich
+                        Kancelariach.
+                        Swoje zainteresowania zawodowe skoncentrowała wokół prawa rodzinnego - przede wszystkim
+                        prowadząc sprawy o rozwód,
+                        alimenty jak i o kontakty, w których to stawia na pierwszym miejscu dobro małoletnich dzieci,
+                        zawsze w pierwszej kolejności próbuje znaleźć rozwiązanie sporu na drodze polubownej.
+                        Specjalizuje się również w kompleksowej obsłudze podmiotów gospodarczych,
+                        z naciskiem na spółki prawa handlowego, ponadto reprezentuje klientów indywidualnych w sporach
+                        frankowych.
+                        Biegle posługuje się językiem angielskim. Czas wolny najchętniej spędza nad wodą, kocha
+                        adrenalinę i taniec.
+                    </p>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section id="contact" class="contact">
+            <h2 class="text-center my-5">Kontakt</h2>
+            <div class="col-md d-flex flex-column justify-content-center align-items-center">
+                <h3 class="contact-title mb-3">Kancelaria Adwokacka BDF Białopiotrowicz, Drążek, Frankiewicz</h3>
+                <h4 class="contact-heading mt-0">TEL</h4>
+                <span class="contact-text"><a href="tel:730153190">+48 730 153 190</a></span>
+
+                <h4 class="contact-heading">ADRES</h4>
+                <span class="contact-text">ul. Ogarna 80/82 lok. 3, 80-826 Gdańsk</span>
+                <span class="contact-text">filia: ul. Stary Rynek 32, 84-100 Puck</span>
+
+                <h4 class="contact-heading">EMAIL</h4>
+                <span class="contact-text"><a
+                        href="mailto:sekretariat@kancelariaadwokackabdf.pl">sekretariat@kancelariaadwokackabdf.pl</a></span>
+
+                <!-- <small class="contact-text-small">Administratorem danych osobowych jest Pracownia Muzyczna Muzykon
+                (80-257 Gdańsk, ul. Słowackiego 37). Dane wpisywane w formularzu kontaktowym będą przetwarzane w
+                celu udzielenia odpowiedzi na przesłane zapytanie zgodnie z <a>regulaminem</a>.
+            </small> -->
+            </div>
+        </section>
+
+    </main>
+    <footer class="m-5 text-right">
+        Kancelaria BDF 2023 ©
+    </footer>
+    <script src="./script.js"></script>
 </body>
+
 </html>
