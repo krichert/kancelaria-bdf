@@ -11,7 +11,21 @@ body {
 section>hr {
     width: 50px;
     border: 2px solid #fac700;
+    margin-bottom: 32px;
 }
+
+@media screen and (max-width: 768px) {
+    section>h2 {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    section>h2 {
+        font-size: 24px;
+    }
+}
+
 
 /* HEADER */
 header .app-nav-trigger {
@@ -185,7 +199,40 @@ header .hero-image .title {
     justify-content: center;
 }
 
+@media screen and (max-width: 1024px) {
+    header .hero-image .white-background {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header .hero-image .title {
+        font-size: 120px;
+    }
+
+    header .hero-image .white-background {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    header .hero-image .title {
+        font-size: 100px;
+    }
+
+    header .hero-image .white-background {
+        width: 80%;
+    }
+}
+
+
 /* ABOUT */
+
+@media screen and (max-width: 400px) {
+    #about p {
+        font-size: 12px;
+    }
+}
 
 
 /* CREW */
@@ -215,11 +262,87 @@ header .hero-image .title {
     width: 50%;
 }
 
+.flip-card {
+    height: 900px;
+}
+
+@media screen and (max-width: 2000px) {
+    .flip-card {
+        height: 800px;
+    }
+}
+
+@media screen and (max-width: 1750px) {
+    .flip-card {
+        height: 700px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .flip-card {
+        height: 600px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .flip-card {
+        height: 500px;
+    }
+
+    #crew p {
+        font-size: 14px;
+    }
+
+    #crew .contact {
+        font-size: 14px;
+    }
+
+    #crew .contact>div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .flip-card {
+        height: 420px;
+    }
+
+    #crew p {
+        font-size: 12px;
+    }
+
+    #crew .contact {
+        font-size: 14px;
+    }
+
+    #crew .contact>div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    #crew p {
+        font-size: 10.5px;
+    }
+
+    #crew .contact {
+        font-size: 11px;
+    }
+}
+
+
+
 /* The flip card container */
 .flip-card {
     background-color: transparent;
     perspective: 1000px;
-    height: 600px;
 }
 
 /* This container is needed to position the front and back side */
@@ -300,6 +423,10 @@ header .hero-image .title {
     animation: swing ease-in-out 3s infinite;
 }
 
+#specializations h5 {
+    text-align: center;
+}
+
 /* CONTACT */
 
 #contact {
@@ -310,6 +437,7 @@ header .hero-image .title {
 
 #contact .contact-title {
     font-size: 20px;
+    text-align: center;
 }
 
 #contact .contact-heading {
@@ -352,6 +480,12 @@ header .hero-image .title {
 #contact a:hover {
     text-decoration: none;
     color: white;
+}
+
+@media screen and (max-width: 425px) {
+    #contact .contact-title {
+        font-size: 18px;
+    }
 }
 
 /* FOOTER */
