@@ -28,6 +28,70 @@ section>hr {
 
 
 /* HEADER */
+header .main-nav {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+    padding: 15px;
+    width: 100%;
+    box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .2);
+}
+
+header .main-nav img {
+    width: 50px;
+}
+
+header .main-nav a {
+    color: black;
+    font-size: 15px;
+    padding: 0 10px;
+}
+
+
+header .main-nav-contact {
+    font-size: 15px;
+
+}
+
+header .main-nav .main-nav-contact img {
+    width: 20px;
+    margin-right: 5px;
+}
+
+header .main-nav .main-nav-contact a {
+    padding: 0 5px;
+}
+
+header .shorten-contact {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+header .shorten-contact>div {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header .shorten-contact a {
+    color: black;
+    font-size: 10px;
+}
+
+header .shorten-contact img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
 header .app-nav-trigger {
     display: none;
 }
@@ -225,8 +289,49 @@ header .hero-image .title {
     }
 }
 
+@media screen and (max-width: 375px) {
+    header .shorten-contact a {
+        font-size: 8px;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    header .shorten-contact {
+        display: none;
+    }
+
+    header .app-nav-trigger-label {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    header .main-nav {
+        display: flex;
+    }
+}
+
 
 /* ABOUT */
+
+@keyframes animatetop {
+    0% {
+        top: -300px;
+        opacity: 0;
+    }
+
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+#about p.animatetop {
+    position: relative;
+    animation: animatetop 1 0.5s;
+}
 
 @media screen and (max-width: 400px) {
     #about p {
@@ -356,7 +461,7 @@ header .hero-image .title {
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
+.flip-card-active .flip-card-inner {
     transform: rotateY(180deg);
 }
 
@@ -463,15 +568,6 @@ header .hero-image .title {
     max-width: 250px;
 }
 
-#contact .contact-text-small a {
-    text-decoration: underline;
-    font-weight: bold;
-}
-
-#contact .contact-text-small a:hover {
-    text-decoration: underline;
-}
-
 #contact a {
     text-decoration: none;
     color: white;
@@ -480,6 +576,57 @@ header .hero-image .title {
 #contact a:hover {
     text-decoration: none;
     color: white;
+}
+
+#contact label {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+#contact input:-webkit-autofill,
+#contact input:-webkit-autofill:hover,
+#contact input:-webkit-autofill:focus,
+#contact input:-webkit-autofill:active,
+#contact textarea:-webkit-autofill,
+#contact textarea:-webkit-autofill:hover,
+#contact textarea:-webkit-autofill:focus,
+#contact textarea:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #FDEFE8 inset !important;
+    -webkit-text-fill-color: #414142 !important;
+}
+
+#contact input {
+    height: 40px;
+    padding: 8px;
+    background-color: #FDEFE8;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 350px;
+    border: none;
+}
+
+#contact input:focus {
+    outline: none;
+}
+
+#contact textarea {
+    min-height: 130px;
+    padding: 8px;
+    background-color: #FDEFE8;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 350px;
+    border: none;
+    resize: none;
+}
+
+#contact textarea:focus {
+    outline: none;
+}
+
+#contact .contact-submit-btn {
+    max-width: 250px;
+    background-color: #fac700;
 }
 
 @media screen and (max-width: 425px) {
