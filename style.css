@@ -57,6 +57,7 @@ header .main-nav-contact {
 header .main-nav .main-nav-contact img {
     width: 20px;
     margin-right: 5px;
+    margin-left: 5px;
 }
 
 header .main-nav .main-nav-contact a {
@@ -229,6 +230,7 @@ header .hero-image {
     background-attachment: fixed;
     height: 100vh;
     background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
