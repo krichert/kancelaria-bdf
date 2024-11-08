@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: http://adwokatpuck.pl/sitemap.xml
+Sitemap: http://kancelariaadwokackabdf.pl/sitemap.xml

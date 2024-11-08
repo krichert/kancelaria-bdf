@@ -59,14 +59,12 @@ function adjustFlipCards() {
     var img = document.querySelector('#crew-img');
     var flipCards = document.querySelectorAll('.flip-card');
 
-    console.log(img.offsetHeight)
-
     flipCards.forEach(function (card) {
         card.style.height = img.offsetHeight + 'px'
     })
 }
 
 (function () {
-    adjustFlipCards();
+    addEventListener("load", adjustFlipCards);
     addEventListener("resize", adjustFlipCards);
 })();
